@@ -18,7 +18,8 @@ printf("\n----------------------------------------------------------------------
      printf("\n1.Calulate BODMAS");
 	 printf("\n2.Exit");
 	 printf("\n3.Power");
-         printf("\n4.Square root");
+     printf("\n4.Square root");
+	 printf("\n5.geometry");
 
 printf("\n---------------------------------------------------------------------\n");
      printf("\nEnter your choice : ");
@@ -52,11 +53,24 @@ printf("------------------------------------------------------------------------
 		case 3 :
 		        
 		        power();
-                        break;
-                case 4 : 
-                        square_root();
-                        break;
-
+                break;
+        case 4 : 
+                square_root();
+                break;
+        case 5 : 
+		         int choice;
+		         printf("\n1.Circle\n2.Tiangle\n");
+		         printf("Enter a choice : ");
+				 scanf("%d",&choice);
+				 switch(choice)
+				   {       
+				     case 1:float radius;
+					        printf("Enter a radius for calculate Area: ");
+					        scanf("%f",&radius);
+							printf("%.2f",3.14*radius*radius);
+							break;
+                     
+		           }
       }//end of switch 
     } //end of while loop
 
